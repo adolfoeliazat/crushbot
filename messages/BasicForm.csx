@@ -11,10 +11,10 @@ public class BasicForm
     [Prompt("Hi! Write a message for your crush! :)")]
     public string Crush { get; set; }
 
-    [Prompt("What year are you? {&} {||}")]
+    [Prompt("What year are you?")]
     public YearOfStudy Year { get; set; }
 
-    [Prompt("What section are you in? {||}")]
+    [Prompt("What section are you in?")]
     public Section StudySection { get; set; }
 
     public static IForm<BasicForm> BuildForm()
