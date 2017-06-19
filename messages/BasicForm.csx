@@ -1,7 +1,7 @@
 using System;
 using Microsoft.Bot.Builder.FormFlow;
 
-public enum Section { IS = 1, CTI, CTI-EN, INFO, Secret };
+public enum Section { IS = 1, CTI, CTIEN, INFO, Secret };
 public enum YearOfStudy { One = 1, Two, Three, Four, Master, PhD, Secret };
 
 // For more information about this template visit http://aka.ms/azurebots-csharp-form
