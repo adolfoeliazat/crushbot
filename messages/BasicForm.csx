@@ -1,21 +1,21 @@
 using System;
 using Microsoft.Bot.Builder.FormFlow;
 
-public enum CarOptions { Convertible = 1, SUV, EV };
-public enum ColorOptions { Red = 1, White, Blue };
+public enum Section { IS = 1, CTI, CTI-EN, INFO, Secret };
+public enum YearOfStudy { One = 1, Two, Three, Four, Master, PhD, Secret };
 
 // For more information about this template visit http://aka.ms/azurebots-csharp-form
 [Serializable]
 public class BasicForm
 {
     [Prompt("Hi! What is your {&}?")]
-    public string Name { get; set; }
+    public string Crush { get; set; }
 
-    [Prompt("Please select your favorite car type {||}")]
-    public CarOptions Car { get; set; }
+    [Prompt("What year are you? {&} {||}")]
+    public YearOfStudy Year { get; set; }
 
-    [Prompt("Please select your favorite {&} {||}")]
-    public ColorOptions Color { get; set; }
+    [Prompt("What section are you in? {||}")]
+    public Section StudySection { get; set; }
 
     public static IForm<BasicForm> BuildForm()
     {
