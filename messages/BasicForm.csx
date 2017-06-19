@@ -8,7 +8,7 @@ public enum YearOfStudy { One = 1, Two, Three, Four, Master, PhD, Secret };
 [Serializable]
 public class BasicForm
 {
-    [Prompt("Hi! What is your {&}? (Please write a message, one line only :) )")]
+    [Prompt("Hi! Write a message for your crush! :)")]
     public string Crush { get; set; }
 
     [Prompt("What year are you? {&} {||}")]
